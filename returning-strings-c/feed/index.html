@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Returning Strings in C	</title>
+	<atom:link href="https://onefact.net/returning-strings-c/feed/" rel="self" type="application/rss+xml" />
+	<link>https://onefact.net/returning-strings-c/</link>
+	<description>The Experts in xtUML</description>
+	<lastBuildDate>Wed, 16 Dec 2020 16:10:28 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>
+		By: cortlandstarrett		</title>
+		<link>https://onefact.net/returning-strings-c/#comment-3</link>
+
+		<dc:creator><![CDATA[cortlandstarrett]]></dc:creator>
+		<pubDate>Tue, 26 Jul 2016 14:27:51 +0000</pubDate>
+		<guid isPermaLink="false">http://onefact-migrate.zipfish-sites.io/?p=186#comment-3</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;https://onefact.net/returning-strings-c/#comment-2&quot;&gt;JamesB007&lt;/a&gt;.
+
+This is a frequent question and a fair one to ask.  There are several answers.
+
+1) C is not model aware.  Action language (OAL) &quot;understands&quot; association, state machine, event, etc.
+2) Action language is at a higher level of abstraction.  It is more productive to write action language; each line of action language represents 5-7 lines of C (on average).
+3) C is platform dependent; action language is platform independent.  Action language does not govern choices of data storage, OS, threading, etc.  C requires that these lower level target decisions are made at the same time as the application is being encoded.
+4) C is not interpretively executable; action language is.  This allows executing (testing) models much earlier.  Partial models can be executed, and compilation is not required.
+
+All this said, it is possible to leave out the action language, generate the structural code and type C code into the action bodies.  This is done in some cases.  But it is not very fun to write C for all of the actions when OAL generates them easily.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="https://onefact.net/returning-strings-c/#comment-2">JamesB007</a>.</p>
+<p>This is a frequent question and a fair one to ask.  There are several answers.</p>
+<p>1) C is not model aware.  Action language (OAL) &#8220;understands&#8221; association, state machine, event, etc.<br />
+2) Action language is at a higher level of abstraction.  It is more productive to write action language; each line of action language represents 5-7 lines of C (on average).<br />
+3) C is platform dependent; action language is platform independent.  Action language does not govern choices of data storage, OS, threading, etc.  C requires that these lower level target decisions are made at the same time as the application is being encoded.<br />
+4) C is not interpretively executable; action language is.  This allows executing (testing) models much earlier.  Partial models can be executed, and compilation is not required.</p>
+<p>All this said, it is possible to leave out the action language, generate the structural code and type C code into the action bodies.  This is done in some cases.  But it is not very fun to write C for all of the actions when OAL generates them easily.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: JamesB007		</title>
+		<link>https://onefact.net/returning-strings-c/#comment-2</link>
+
+		<dc:creator><![CDATA[JamesB007]]></dc:creator>
+		<pubDate>Mon, 25 Jul 2016 20:35:51 +0000</pubDate>
+		<guid isPermaLink="false">http://onefact-migrate.zipfish-sites.io/?p=186#comment-2</guid>
+
+					<description><![CDATA[Why can&#039;t xtUML use &#039;C&#039; as its action language and cut out the OAL middleman?]]></description>
+			<content:encoded><![CDATA[<p>Why can&#8217;t xtUML use &#8216;C&#8217; as its action language and cut out the OAL middleman?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

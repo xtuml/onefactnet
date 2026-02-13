@@ -1,0 +1,15 @@
+document.addEventListener('DOMContentLoaded', function () {
+  jQuery(window).on('elementor/frontend/init', function () {
+    if (elementorFrontend.config.environmentMode.edit) {
+      elementorFrontend.hooks.addAction(
+        'frontend/element_ready/global',
+        function ($scope) {
+          if ($scope.hasClass('hf-appear-watch-animation')) {
+            $scope.addClass('hf-animated');
+            $scope.addClass('hf-animated-once');
+          }
+        }
+      );
+    }
+  });
+});
