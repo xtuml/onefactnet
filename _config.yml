@@ -1,0 +1,19 @@
+title: One Fact
+description: The Experts in xtUML
+url: "https://xtuml.github.io"
+baseurl: "/onefactnet"
+
+markdown: kramdown
+permalink: pretty
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
